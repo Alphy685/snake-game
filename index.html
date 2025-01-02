@@ -4,6 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* CSS for Snake Game - Mobile-Friendly */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: calc(100vw * (600 / 600)); /* Maintain aspect ratio */
+    max-height: 100vh;
+    max-width: calc(100vh * (600 / 600));
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+button {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+button:active {
+    opacity: 1;
+}
+
+button#up {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button#down {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button#left {
+    top: 77.5%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+button#right {
+    top: 77.5%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+        
+    </style>
 </head>
 <body>
     <script>
